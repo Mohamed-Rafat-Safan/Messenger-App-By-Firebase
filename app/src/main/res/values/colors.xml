@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FFFDFF</color>
+    <color name="purple_700">#FFFDFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBlue">#0188ff</color>
+    <color name="colorMorBlue">#5A00FF</color>
+
+    <color name="colorGray">#CCC9C9</color>
+
+    <color name="colorPrimary">#E91E63</color>
+
+
+    <color name="createAccountColor">#6708FF</color>
+
+
+    <color name="statusColor">#B9FFF8</color>
+    <color name="color_online">#2FFF00</color>
+</resources>

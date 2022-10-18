@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ChattingActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginEnd="8dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_fiend_image_toolbar"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/user"
+                android:layout_toEndOf="@+id/iv_back"/>
+            <!--        app:civ_border_width="2dp"-->
+            <!--        app:civ_border_color="#FF000000"-->
+
+
+            <TextView
+                android:id="@+id/chat_fiend_name_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiend Name"
+                android:textSize="20sp"
+                android:layout_gravity="center|left"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/chat_fiend_image_toolbar"/>
+
+
+            <LinearLayout
+                android:id="@+id/shape_online_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_mark_online"
+                android:padding="3dp"
+                android:layout_alignBottom="@+id/chat_fiend_image_toolbar"
+                android:layout_toEndOf="@id/chat_fiend_image_toolbar"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginBottom="-5dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:backgroundTint="@color/color_online"
+                    android:enabled="false"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    app:borderWidth="0dp"
+                    app:fabSize="normal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:reverseLayout="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_main_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_takeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/iv_chooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_select_photo" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et_send_message"
+            android:hint="Aa"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:src="@drawable/ic_send" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+

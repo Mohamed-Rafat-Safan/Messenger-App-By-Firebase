@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "516808913473",
+    "project_id": "messenger-app-9dda5",
+    "storage_bucket": "messenger-app-9dda5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516808913473:android:59eebefcd25820727f0cc0",
+        "android_client_info": {
+          "package_name": "com.mohamedrafat.messengerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516808913473-i90o5mkfjpa36341m3k29a19f4voigro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6-hyuGcCCraRbE5gGvhDdDp2XivLsPsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516808913473-i90o5mkfjpa36341m3k29a19f4voigro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
