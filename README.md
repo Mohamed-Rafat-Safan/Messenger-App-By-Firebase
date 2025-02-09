@@ -12,6 +12,7 @@
 - Material Design <br>
 - Firebase (Authentication - Cloud firestore - Data Storage - Fcm – Notification) <br> 
 - SharedPreferences <br>
+- Retrofit2 <br>
 - coroutines <br>
 - Glide <br>
 
