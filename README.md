@@ -10,6 +10,7 @@
  ## And the tools used within the application:
 - language: Kotlin <br>
 - Material Design <br>
+- viewBinding <br>
 - Firebase (Authentication - Cloud firestore - Data Storage - Fcm – Notification) <br> 
 - SharedPreferences <br>
 - Retrofit2 <br>
